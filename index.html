@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Bengkel Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Laporan Harian Bengkel</h1>
+            <p id="date-display"></p>
+        </header>
+
+        <!-- Form Input Data -->
+        <section class="card">
+            <h3>Tambah Data Servis</h3>
+            <form id="input-form">
+                <input type="text" id="nama-barang" placeholder="Nama Barang / Jasa" required>
+                <div class="form-row">
+                    <input type="number" id="qty" placeholder="Jumlah" required>
+                    <input type="number" id="harga" placeholder="Total Biaya (Rp)" required>
+                </div>
+                <button type="submit" id="btn-simpan">Simpan Data</button>
+            </form>
+        </section>
+
+        <!-- Ringkasan Statistik -->
+        <div class="stats-grid">
+            <div class="card stat-card">
+                <small>Total Servis</small>
+                <h2 id="jumlah-servis">0</h2>
+            </div>
+            <div class="card stat-card">
+                <small>Total Pendapatan</small>
+                <h2 id="total-biaya">Rp 0</h2>
+            </div>
+        </div>
+
+        <!-- Tabel Riwayat -->
+        <section class="card">
+            <div class="loading-indicator" id="loading">Memperbarui data...</div>
+            <div class="table-wrapper">
+                <table id="parts-table">
+                    <thead>
+                        <tr>
+                            <th>Waktu</th>
+                            <th>Item</th>
+                            <th>Qty</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
