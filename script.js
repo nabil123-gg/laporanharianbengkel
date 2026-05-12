@@ -1,4 +1,4 @@
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby-c3TRGQhEOpCTLdGDUURQOF10PsK9IhLYpi5_iZ27_R9hIGMwNGoy6yLQBZnOohJx/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwvaqbP7DZ9YCskFakVIlno2JMyMQY1RqXnYQHY_0nU5SrFQi5WwGkeM7Omz8-R5eki/exec';
 
 async function fetchLaporan() {
     const loading = document.getElementById('loading');
